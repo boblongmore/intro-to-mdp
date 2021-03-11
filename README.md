@@ -27,8 +27,31 @@ You can allow remote access, but you don't need to in this lab.
 Enter in the superuser credentials and your email address.
 
 Open up a browser on the jumphost and go to <http://localhost:8480>
-Accept the EULA and log in using the credentials you previously created.
+
+Accept the EULA and you should be at the yangsuite home screen.
+
 
 ### getting started with yangsuite
+
+To get started we need to some setup:
+1. Add device(s)
+2. Add Yang model repository
+3. Create Yang model set
+
+To add a device go to setup -> Device Profiles, create a new device.
+* Populate IP address and credentials, under the NETCONF section, 
+* enable NETCONF and click to bypass SSH Key validation
+* Save and check connectivity
+
+To create a Yang model repository go to setup -> Yang files and repositories
+* Click new repository and give it a name
+* You can download the models from the device by clicking on NETCONF, selecting the device profile, then clicking the get schema button
+* filter and select, or select all modules to download
+
+To create a Yang model set, got to setup -> Yang module sets
+* click create new yang set
+* add a name and choose to associate the Yang repository created earlier
+* choose which modules to add to the module set
+
 
 
