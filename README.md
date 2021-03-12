@@ -2,9 +2,15 @@
 
 ## Working with Pyang 
 
-pyang -f tree 
+download the yang models from github: `git clone https://github.com/YangModels/yang.git`
 
-pyang -f 
+intall the pyang tool: `pip install pyang`
+
+to display a module in tree format: `pyang -f tree ./vendor/cisco/xe/16121/ietf-interfaces.yang`
+
+Use tree help for an explanation of the symbols used: `pyang --tree-help`
+
+use pyang to output to a file viewable through a web browser: `pyang -f jstree ./vendor/cisco/xe/16121/ietf-interfaces.yang -o ./jstree.html`
 
 
 ## Working with Yangsuite
